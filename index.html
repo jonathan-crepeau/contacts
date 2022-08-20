@@ -21,7 +21,7 @@
     <title>Contacts</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4" style="background-color: #847F64;">
         <div class="container">
           <a class="navbar-brand" href="#">MyContacts</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +40,42 @@
           </div>
         </div>
       </nav>
+
+      <main class="container">
+        <section class="mb-5">
+            <form id="createContactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="contact-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control form-control-lg" type="email" id="email" name="contact-email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input class="form-control form-control-lg" type="phone" id="phone" name="contact-phone">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input class="form-control form-control-lg" type="text" id="address" name="contact-address">
+                </div>
+                <div class="form-group">
+                    <label for="is-friend">Friend?</label>
+                    <input class="form-control form-control-lg" type="checkbox" id="is-friend" name="is-friend">
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary ml-auto">Add Contact</button>
+                </div>
+            </form>
+        </section>
+        <section id="contactList" class="row"></section>
+      </main>
+
+      <footer class="text-light text-center pt-3 pb-3" style="background-color:#847F64">
+        <p class="mb-0">&copy; 2022 Acme Inc.</p>
+      </footer>
+   
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
