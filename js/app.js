@@ -69,3 +69,5 @@ function render(data) {
 }
 
 render(state.contacts);
+
+createContactForm.addEventListener('submit', () => console.log(event));
