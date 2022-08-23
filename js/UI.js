@@ -41,6 +41,19 @@ class UI {
 
         state.contacts.push(newContact);
         UI.render(newContact);
-    }
+    };
+
+    static handleDeleteContact() {
+        if (event.target.classList.contains('delete')) {
+            const filteredContacts = state.contacts.filter((contact) => {
+                return contact.id !== parseInt(event.target.dataset.contactid);
+            });
+
+            state.contacts = filteredContacts;
+
+            event.target.parentNode.remove();
+
+        }
+    };
 
 }

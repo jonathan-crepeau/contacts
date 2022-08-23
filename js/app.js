@@ -76,3 +76,4 @@ UI.render(state.contacts);
 // SECTION - Event Listeners:
 
 createContactForm.addEventListener('submit', () => UI.handleCreateContact());
+contactList.addEventListener('click', () => UI.handleDeleteContact());
